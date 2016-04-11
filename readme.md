@@ -31,6 +31,8 @@ initial user experience within a terminal Buffer is not perfect:
 This plugin aims to alleviate some of these issues, for a better terminal
 buffer experience.
 
+![demo](./demo.gif)
+
 ## Install
 
 Install this plugin using your favorite plugin manager, or manually by
@@ -54,7 +56,9 @@ REPL.
 
 - `:10Term` would open an horizontal buffer with 10 lines displayed, on top of
   the current buffer.
-- `:100VTerm` would open a vertical buffer with 10 lines displayed.
+
+- `:100VTerm` would open a vertical buffer with 10 lines displayed, right of
+  the current buffer.
 
 - `:Term npm search something` would open a new terminal buffer and launch a
   search on npm registry. This is a good candidate to appreciate the async
@@ -62,11 +66,9 @@ REPL.
 
 - `:2Term npm install express` would open a minimal buffer with only two lines,
   immediatly invoking `npm install express` with npm output displayed within
-  the terminal buffer. Hit `<Enter>` when done to clone the buffer.
+  the terminal buffer. Hit `<Enter>` when done to close the buffer.
 
 - `:VTerm node` would open a vertical buffer with a node REPL started.
-
-![demo](./demo.gif)
 
 ## Configuration
 
@@ -82,7 +84,7 @@ REPL.
 
 The plugin remaps specifically a few keys for a better terminal buffer experience.
 
-- `<Esc>` - Switch to normal mode (instead of `<C-\><C-n>`
+- `<Esc>` - Switch to normal mode (instead of `<C-\><C-n>`)
 - Bind Alt+hjkl, Ctrl+arrows to navigate through windows (eg. switching to buffer/windows left, right etc.)
   - `Alt+h` - does a `<C-w>h`
   - `Alt+j` - does a `<C-w>j`
