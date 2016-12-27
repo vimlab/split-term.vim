@@ -80,9 +80,12 @@ REPL.
   - `set splitright` will put the new window right of the current one when using `:VTerm`
   - `set splitbelow` will put the new window below the current one when using `:Term`
 
+- `g:disable_key_mappings` - disable key mappings of the plugin
+
 ## Mappings
 
-The plugin remaps specifically a few keys for a better terminal buffer experience.
+The plugin remaps specifically a few keys for a better terminal buffer experience. This
+behaviour can be disabled using `g:disable_key_mappings`.
 
 - `<Esc>` - Switch to normal mode (instead of `<C-\><C-n>`)
 - Bind Alt+hjkl, Ctrl+arrows to navigate through windows (eg. switching to buffer/windows left, right etc.)
