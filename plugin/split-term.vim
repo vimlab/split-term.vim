@@ -1,5 +1,6 @@
 
 let s:force_vertical = exists('g:split_term_vertical') ? 1 : 0
+let s:map_keys = exists('g:disable_key_mappings') ? 0 : 1
 
 " utilities around neovim's :term
 
@@ -55,7 +56,9 @@ fun! s:openTerm(args, count, vertical)
   call s:openBuffer(a:count, direction)
   exe 'terminal' a:args
   exe 'startinsert'
-  call s:defineMaps()
+  if s:map_keys
+    call s:defineMaps()
+  endif
 endf
 
 command! -count -nargs=* Term call s:openTerm(<q-args>, <count>, 0)
