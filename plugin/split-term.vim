@@ -1,6 +1,7 @@
 
 let s:force_vertical = exists('g:split_term_vertical') ? 1 : 0
 let s:map_keys = exists('g:disable_key_mappings') ? 0 : 1
+let s:default_shell = exists('g:split_term_default_shell') ? g:split_term_default_shell : 0
 
 " utilities around neovim's :term
 
@@ -54,10 +55,20 @@ fun! s:openTerm(args, count, vertical)
   let direction = s:force_vertical ? 1 : a:vertical
 
   call s:openBuffer(a:count, direction)
+
+  let prevShell = &shell
+  if exists('g:split_term_default_shell')
+    exe 'set shell =' . s:default_shell
+  endif
+
   exe 'terminal' a:args
   exe 'startinsert'
   if s:map_keys
     call s:defineMaps()
+  endif
+
+  if exists('g:split_term_default_shell')
+    exe 'set shell =' . prevShell
   endif
 endf
 

@@ -38,7 +38,7 @@ buffer experience.
 Install this plugin using your favorite plugin manager, or manually by
 extracting the files in your `~/.vim` or `~/.config/nvim` directory.
 
-    Plug 'mklabs/split-term.vim'
+    Plug 'vimlab/split-term.vim'
 
 ## Commands
 
@@ -72,15 +72,27 @@ REPL.
 
 ## Configuration
 
-- `g:split_term_vertical` - force the `:Term` command to always use a vertical
-  buffer (using `:vnew`)
-
-- `splitright/splitbelow` options can be used to configure the split buffer
+`splitright/splitbelow` options can be used to configure the split buffer
   orientation.
   - `set splitright` will put the new window right of the current one when using `:VTerm`
   - `set splitbelow` will put the new window below the current one when using `:Term`
 
-- `g:disable_key_mappings` - disable key mappings of the plugin
+`g:split_term_default_shell` - enables shell configuration specific to
+  split-term. It lets vim's `shell` configuration free to let other plugins
+  that might need it (such as ale or neomake) and works nicely [with Windows
+  Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/about).
+  Example:
+
+```vim
+let g:split_term_default_shell = "bash"
+```
+
+`g:split_term_vertical` - force the `:Term` command to always use a vertical
+  buffer (using `:vnew`)
+
+`g:disable_key_mappings` - disable key mappings of the plugin
+
+
 
 ## Mappings
 
