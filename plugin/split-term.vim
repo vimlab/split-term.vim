@@ -37,6 +37,9 @@ fun! s:defineMaps()
   nnoremap <buffer> <C-Down>  <C-w>j
   nnoremap <buffer> <C-Up>    <C-w>k
   nnoremap <buffer> <C-Right> <C-w>l
+
+  " Easier time when pasting content in terminal mode with <C-v>
+  tnoremap <expr> <C-v> '<C-\><C-N>pi'
 endfunction
 
 " Opens up a new buffer, either vertical or horizontal. Count can be used to

@@ -28,6 +28,9 @@ initial user experience within a terminal Buffer is not perfect:
   are inactive in favor of the terminal implementation (which is in this case
   delete previous word)
 
+- Pasting content in terminal can be troublesome. This plugin makes it a little
+  bit easier to paste content in terminal mode using `<C-v>`.
+
 This plugin aims to alleviate some of these issues, for a better terminal
 buffer experience.
 
