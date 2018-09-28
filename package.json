@@ -1,6 +1,6 @@
 {
   "name": "split-term.vim",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "split-term vim plugin",
   "scripts": {
     "changelog": "auto-changelog"
