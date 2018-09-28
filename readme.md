@@ -47,9 +47,11 @@ extracting the files in your `~/.vim` or `~/.config/nvim` directory.
 
 - **`:Term`** Opens a new terminal buffer using `:new` (splits horizontally)
 - **`:VTerm`** Opens a new terminal buffer using `:vnew` (splits vertically)
+- **`:TTerm`** Opens a new terminal buffer using `:tabnew` (new tab)
 
-Both commands accept a `<count>` like their `:new`/`:vnew` counterparts. You
-can prefix both commands with a number to specifiy the buffer height / width.
+Both `:Term` and `:VTerm` commands accept a `<count>` like their `:new`/`:vnew`
+counterparts. You can prefix both commands with a number to specifiy the buffer
+height / width.
 
 Similar to the original `:terminal`, both commands accepts any number of
 arguments. It can be used to spawn a cmd and see the result, or even start a
