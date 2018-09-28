@@ -97,8 +97,6 @@ let g:split_term_default_shell = "bash"
 
 `g:disable_key_mappings` - disable key mappings of the plugin
 
-
-
 ## Mappings
 
 The plugin remaps specifically a few keys for a better terminal buffer experience. This
@@ -114,3 +112,39 @@ behaviour can be disabled using `g:disable_key_mappings`.
   - `Ctrl+Down` - does a `<C-w>j`
   - `Ctrl+Up` - does a `<C-w>k`
   - `Ctrl+Right` - does a `<C-w>l`
+  - `Ctrl+v` - copy-pasting, does a `<C-\><C-N>pi`
+
+
+# Changelog
+
+## [v1.0.3](https://github.com/vimlab/split-term.vim/compare/v1.0.2...v1.0.3) - 2018-09-28
+
+### Commits
+
+- npm: add auto-changelog to generate, well a changelog [`e6c4179`](https://github.com/vimlab/split-term.vim/commit/e6c41795d973b4f358d25a093e4b5ccc4205d821)
+
+## [v1.0.2](https://github.com/vimlab/split-term.vim/compare/v1.0.1...v1.0.2) - 2018-09-28
+
+### Commits
+
+- feat: add TTerm command to open terminal in a new tab [`836f514`](https://github.com/vimlab/split-term.vim/commit/836f5143e2c3781a38e492027604a74a19960103)
+- Add MIT license [`eb1dc3b`](https://github.com/vimlab/split-term.vim/commit/eb1dc3b6e9789d7f394b54da611e2e08f98d0eec)
+- .gitignore [`28d1899`](https://github.com/vimlab/split-term.vim/commit/28d189951b3841e954c5a2d3ca2c3415acfb6712)
+
+## v1.0.1 - 2018-09-27
+
+### Merged
+
+- make key mappings optional [`#3`](https://github.com/vimlab/split-term.vim/pull/3)
+
+### Commits
+
+- mappings: easier time pasing content using <C-v> [`bb20d81`](https://github.com/vimlab/split-term.vim/commit/bb20d815e019357faf1777b6da18b832630fedfe)
+- feat: add split_term_default_shell option [`148f571`](https://github.com/vimlab/split-term.vim/commit/148f5718bd3b1c72aa1a8fce409b0fd5a3e75a87)
+- Fix a few typos [`ab0f21a`](https://github.com/vimlab/split-term.vim/commit/ab0f21a2bff54434847176efda654ab6537de538)
+- Init [`1e19ce3`](https://github.com/vimlab/split-term.vim/commit/1e19ce37b64e61ecb922db02edebdd900e7f81d8)
+
+---
+
+License [MIT](./LICENSE)
+
