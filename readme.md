@@ -117,6 +117,12 @@ behaviour can be disabled using `g:disable_key_mappings`.
 
 # Changelog
 
+## [Unreleased](https://github.com/vimlab/split-term.vim/compare/v1.0.3...HEAD)
+
+### Commits
+
+- readme: add changelog and Ctrl+v mapping to readme [`6cea1a3`](https://github.com/vimlab/split-term.vim/commit/6cea1a3f6f7ad57f6796f6c544a7567242d9777c)
+
 ## [v1.0.3](https://github.com/vimlab/split-term.vim/compare/v1.0.2...v1.0.3) - 2018-09-28
 
 ### Commits
