@@ -1,0 +1,26 @@
+{
+  "name": "split-term.vim",
+  "version": "1.0.2",
+  "description": "split-term vim plugin",
+  "scripts": {
+    "changelog": "auto-changelog"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vimlab/split-term.vim.git"
+  },
+  "author": "mklabs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vimlab/split-term.vim/issues"
+  },
+  "homepage": "https://github.com/vimlab/split-term.vim#readme",
+  "auto-changelog": {
+    "template": "keepachangelog",
+    "unreleased": true,
+    "commitLimit": false
+  },
+  "dependencies": {
+    "auto-changelog": "^1.8.0"
+  }
+}
