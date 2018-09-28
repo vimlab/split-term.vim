@@ -18,7 +18,8 @@
   "auto-changelog": {
     "template": "keepachangelog",
     "unreleased": true,
-    "commitLimit": false
+    "commitLimit": false,
+    "ignoreCommitPattern": "changelog|readme"
   },
   "dependencies": {
     "auto-changelog": "^1.8.0"
