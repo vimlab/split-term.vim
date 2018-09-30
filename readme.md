@@ -1,4 +1,4 @@
-# split-term.vim
+![split-term-logo](https://user-images.githubusercontent.com/113832/46258072-ec2ff480-c4c4-11e8-83d8-5d6b0d199034.png)
 
 Utilites around neovim's `:terminal`.
 
