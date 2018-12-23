@@ -75,7 +75,12 @@ fun! s:openTerm(args)
     exe 'set shell =' . s:default_shell
   endif
 
-  exe 'terminal' a:args
+  if has('nvim')
+    exe 'terminal' a:args
+  else
+    exe 'terminal ++curwin' a:args
+  endif
+
   exe 'startinsert'
   if s:map_keys
     call s:defineMaps()
