@@ -101,6 +101,8 @@ let g:split_term_default_shell = "bash"
 
 `g:disable_key_mappings` - disable key mappings of the plugin
 
+`g:split_term_height` - set default height/width at which terminal will be open
+
 ## Mappings
 
 The plugin remaps specifically a few keys for a better terminal buffer experience. This

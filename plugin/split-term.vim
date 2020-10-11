@@ -2,6 +2,7 @@
 let s:force_vertical = exists('g:split_term_vertical') ? 1 : 0
 let s:map_keys = exists('g:disable_key_mappings') ? 0 : 1
 let s:default_shell = exists('g:split_term_default_shell') ? g:split_term_default_shell : 0
+let s:default_height_width = exists('g:split_term_height') ? g:split_term_height : 25
 
 " utilities around neovim's :term
 
@@ -46,7 +47,7 @@ endfunction
 " specify the number of visible columns or rows.
 fun! s:openBuffer(count, vertical)
   let cmd = a:vertical ? 'vnew' : 'new'
-  let cmd = a:count ? a:count . cmd : cmd
+  let cmd = a:count ? a:count . cmd : s:default_height_width . cmd
   exe cmd
 endf
 
